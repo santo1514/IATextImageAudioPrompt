@@ -1,0 +1,20 @@
+INSTRUCCIONES PARA USAR DE FORMA NATIVA EL LABORATORIO
+
+----PREREQUISITOS
+	1. Instalar git desde https://git-scm.com/install/  (para su respectivo sistema operativo)
+	2. Instalar Visual Studio Code https://code.visualstudio.com/download (para su respectivo sistema operativo)
+	3. Instalar Docker https://www.docker.com/  (para su respectivo sistema operativo)
+	4. Instalar Postman https://www.postman.com/downloads/ (para su respectivo sistema operativo)
+	
+----PASOS PARA EJECUTAR EN LOCAL
+	1.  Crear un directorio de trabajo Lab2AudioImagTextPrompt 
+	2.  Mediante una terminal/cmd ejecutar el siguiente comando: git clone https://github.com/santo1514/IATextImageAudioPrompt.git (dentro del directorio del punto 1)
+	3.  Abrir en VSCODE la carpeta del punto 2 (IATextImageAudioPrompt)
+	4.  En la raíz del proyecto en VSCODE crear el archivo .env donde se configura la variable de entorno COHERE_API_KEY=<CADA UNO PONER SU API_KEY>
+	5.  En una terminal dentro de VSCODE ejecutar docker build -t lab2-analisis . (debe estar a la altura de donde se encuentra el archivo Dockerfile)
+	6.  En la misma termina de VSCODE ejecutar docker run --env-file .env -p 9015:9015 lab2-analisis para levantar el contenedor con la aplicación de IA
+	7.  En Postman IMPORTAR el collection que se encuentra en el directorio del proyecto de VSCODE en data con nombre Lab2-TextAudioImage.postman_collection.json 
+	8.  Abrir el request con nombre POST-IAAPP configurar los datos del formulario bajo la pestaña Body con los archivos que se encuentran en el directorio data del proyecto en VSCODE
+	9.  Probar dando clic en Send con la URL http://localhost:9015/process
+	10. Para probar la misma aplicación pero desplegada en la nube de AZURE en un "Azure container" configurar la URL con http://135.224.134.141:9015/process
+	
