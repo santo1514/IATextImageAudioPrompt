@@ -36,3 +36,4 @@ pip install fastapi uvicorn python-multipart openai-whisper transformers torch t
 | `transformers` | Libreria de HuggingFace con modelos de IA (sentimiento y CLIP) |
 | `torch` `torchvision` `torchaudio` | Framework de deep learning requerido por Whisper y Transformers |
 | `Pillow` | Procesamiento de imagenes |
+| `Cohere` | LLM |
