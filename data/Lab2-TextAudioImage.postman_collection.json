@@ -1,0 +1,62 @@
+{
+  "info": {
+    "_postman_id": "d7df2f17-19b7-45c2-b2af-93818a6054cf",
+    "name": "Lab2-TextAudioImage",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "974941"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "text",
+              "value": "Teléfono inteligente moderno con la pantalla severamente rota, con un patrón de grietas en forma de telaraña que se extiende por toda la superficie de la pantalla",
+              "type": "text",
+              "uuid": "95187aab-a63c-4d09-a99d-941a9f70d4fc"
+            },
+            {
+              "key": "image",
+              "type": "file",
+              "uuid": "dd5cb162-c764-4a29-bd4f-2620aa426dfc",
+              "src": "/Users/saint/Downloads/CELLWELL.jpeg",
+              "disabled": true
+            },
+            {
+              "key": "audio",
+              "type": "file",
+              "uuid": "e47221ef-bb53-4663-9726-4f342398b7d2",
+              "src": "/Users/saint/Downloads/audio.wav"
+            },
+            {
+              "key": "image",
+              "type": "file",
+              "uuid": "d576f05f-3622-4d0b-8b12-93136a31a8bd",
+              "src": "/Users/saint/Downloads/CELLBROKEN.jpeg"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://48.211.241.115:9015/process",
+          "protocol": "http",
+          "host": [
+            "48",
+            "211",
+            "241",
+            "115"
+          ],
+          "port": "9015",
+          "path": [
+            "process"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

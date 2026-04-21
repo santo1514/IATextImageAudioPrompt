@@ -1,0 +1,6 @@
+.env
+.venv
+.claude
+.vscode
+temp_audio.wav
+src/com/ssline/app/__pycache__
